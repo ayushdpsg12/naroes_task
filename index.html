@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with-device-width,initial-scale=1.0" />
+    <title>NAROES WEBSITE</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="logo.png" /></a>
+        <div class="nav-links"  id="navLinks">
+         
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#abtus">ABOUT US</a></li>
+            <li><a href="">OUR TEAM</a></li>
+            <li><a href="">OUR EVENTS</a></li>
+            <li><a href="">GALLERY</a></li>
+            <li><a href="#ctus">CONTACT US</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-times" onclick="hidemenu()"></i>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1 class="college-name">INDIAN INSTITUTE OF TECHNOLOGY KHARAGPUR</h1>
+        <h1 class="department-name">
+          DEPARTMENT OF OCEAN ENGINEERING AND <br />NAVAL ARCHITECTURE
+        </h1>
+        <button type="button" class="btn">Know more About us</button>
+      </div>
+    </section>
+    <section class="about-us">
+      <h1 class="heading" id="abtus">ABOUT US</h1>
+      <hr class="dotted" />
+      <div class="about">
+        <p class="para">
+          <img src="oena.jpg" class="dept-img" /> Being the first of its kind in
+          the country, the department was established in 1952. During the last
+          60 years of its existence, the department has made significant
+          contributions to the development of shipbuilding and shipping
+          industries in the country including the Indian Navy, Indian Coastal
+          Guard, DRDO and other allied organisations. The department and its
+          alumni have important and strategic links with universities round the
+          world and major shipyard and dock organizations in our country. In
+          addition to teaching and training at the various levels of bachelors,
+          masters and doctoral programs, the Department is also actively
+          involved in various research and industrial projects sponsored by
+          government, research organizations and industry.
+        </p>
+      </div>
+      <div class="btn-grp">
+        <ul>
+          <li>
+            <a
+              href="https://wiki.metakgp.org/w/List_of_departments#Department_of_Ocean_Engineering_.26_Naval_Architecture"
+              >COURSES</a
+            >
+          </li>
+          <li>
+            <a href="http://www.iitkgp.ac.in/department/NA">FACULTIES</a>
+          </li>
+          <li>
+            <a
+              href="https://wiki.metakgp.org/w/Department_of_Ocean_Engineering_%26_Naval_Architecture"
+            >
+              RESEARCH AREAS</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="https://wiki.metakgp.org/w/List_of_departments#Department_of_Ocean_Engineering_.26_Naval_Architecture"
+              >FACILITIES</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://wiki.metakgp.org/w/List_of_departments#Department_of_Ocean_Engineering_.26_Naval_Architecture"
+              >SCOPE</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contact-form" id="ctus">
+      <div class="container">
+        <form action="action_page.php">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name.."
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="country">Email</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="email"
+                name="MAIL"
+                placeholder="Your Email ID.."
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Subject</label>
+            </div>
+            <div class="col-75">
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something.."
+                style="height: 80px"
+              ></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+      <div class="socialm">
+        <h3>Connect on social media</h3>
+        <div class="icons">
+          <a href="https://www.samudramanthan.in/">
+            <img class="img1" src="logo.png" />
+          </a>
+          <a href="https://www.facebook.com/samudramanthan.iitkgp/">
+            <img src="facebook.png" />
+          </a>
+          <a
+            href="https://www.instagram.com/samudramanthan.iitkgp/?hl=en"
+            target="_self"
+          >
+            <img src="instagram.png" />
+          </a>
+        </div>
+      </div>
+      <div class="address">
+        <p style="text-align: center" ;>
+          Department of Ocean Engineering and Naval Architecture<br />
+          Indian Intitute of Technology Kharagpur<br />
+          Kharagpur West Bengal<br />
+          Pincode-721302
+        </p>
+      </div>
+      <div class="footer">
+        <p>Copyright © Ayush Lohani</p>
+      </div>
+    </section>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showmenu() {
+        navLinks.style.right = "0";
+      }
+      function hidemenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
